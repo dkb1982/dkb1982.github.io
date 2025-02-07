@@ -1,18 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SharkFin Racing - F1 in Schools</title>
-  <link rel="stylesheet" href="styles.css" />
-  <!-- Google Fonts for a modern look -->
-  <link href="https://fonts.googleapis.com/css?family=Orbitron:400,700|Roboto:400,300&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SharkFin Racing</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Fonts for headings and body -->
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Fixed Header with Navigation -->
+  <!-- Header with Shark Fin Logo and Navigation -->
   <header>
-    <div class="container header-container">
+    <div class="header-container">
       <div class="logo">
+        <!-- Inline SVG Shark Fin Icon -->
+        <svg class="shark-fin" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+          <path d="M32 4 L60 60 H4 Z" fill="#00bfa6"/>
+        </svg>
         <h1>SharkFin Racing</h1>
       </div>
       <nav>
@@ -25,56 +29,59 @@
       </nav>
     </div>
   </header>
-
-  <!-- Hero Section -->
+  
+  <!-- Hero Section with Background Image & Overlay -->
   <section id="hero">
     <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h2>Ride the Wave of Innovation</h2>
-      <p>Speed. Precision. Passion.</p>
-      <a href="#about" class="btn">Discover More</a>
+      <h2>Cutting Through Waves of Speed</h2>
+      <p>Experience the power, precision, and passion of SharkFin Racing.</p>
+      <a href="#about" class="btn">Discover Our Story</a>
     </div>
   </section>
-
+  
   <!-- About Section -->
-  <section id="about" class="container section">
-    <h2>About Us</h2>
-    <p>
-      At SharkFin Racing, we channel the relentless spirit of the ocean and the thrill of speed to push the boundaries of design and engineering. Our F1 in Schools team is driven by innovation, precision, and passion to build high-performance racing machines.
-    </p>
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Us</h2>
+      <p>
+        SharkFin Racing is a team of innovators and speed enthusiasts. Inspired by the elegance and ferocity of the shark, we combine state‑of‑the‑art technology with relentless drive to create high‑performance racing machines. Our mission is to redefine speed and agility on and off the track.
+      </p>
+    </div>
   </section>
-
-  <!-- Team Section -->
-  <section id="team" class="container section">
-    <h2>Our Team</h2>
-    <div class="team-grid">
-      <div class="team-member">
-        <img src="https://via.placeholder.com/150/1A1A1A/FFFFFF?text=Member+1" alt="Team Member 1" />
-        <h3>Member 1</h3>
-        <p>Engineer</p>
-      </div>
-      <div class="team-member">
-        <img src="https://via.placeholder.com/150/1A1A1A/FFFFFF?text=Member+2" alt="Team Member 2" />
-        <h3>Member 2</h3>
-        <p>Designer</p>
-      </div>
-      <div class="team-member">
-        <img src="https://via.placeholder.com/150/1A1A1A/FFFFFF?text=Member+3" alt="Team Member 3" />
-        <h3>Member 3</h3>
-        <p>Strategist</p>
+  
+  <!-- Team Section with Cards -->
+  <section id="team" class="section">
+    <div class="container">
+      <h2>Meet the Crew</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="https://via.placeholder.com/200x200?text=Member+1" alt="Member 1">
+          <h3>Alex</h3>
+          <p>Lead Engineer</p>
+        </div>
+        <div class="team-member">
+          <img src="https://via.placeholder.com/200x200?text=Member+2" alt="Member 2">
+          <h3>Jordan</h3>
+          <p>Design Head</p>
+        </div>
+        <div class="team-member">
+          <img src="https://via.placeholder.com/200x200?text=Member+3" alt="Member 3">
+          <h3>Taylor</h3>
+          <p>Strategy & Innovation</p>
+        </div>
       </div>
     </div>
   </section>
-
+  
   <!-- Contact Section -->
-  <section id="contact" class="container section">
-    <h2>Contact Us</h2>
-    <p>
-      Interested in our journey or want to support us? Get in touch at
-      <a href="mailto:info@sharkfinracing.com">info@sharkfinracing.com</a>.
-    </p>
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Get in Touch</h2>
+      <p>Have questions or want to partner with us? Email us at <a href="mailto:info@sharkfinracing.com">info@sharkfinracing.com</a>.</p>
+    </div>
   </section>
-
+  
   <!-- Footer -->
   <footer>
     <div class="container">
