@@ -1,20 +1,125 @@
-body {
-  font-family: Arial, sans-serif;
+/* Reset default browser styles */
+* {
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
-  color: #333;
+  box-sizing: border-box;
 }
 
-header, footer {
-  background-color: #0077cc;
-  color: #fff;
-  padding: 1rem;
+/* Body and Font Setup */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+/* Container for consistent width */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+/* Header Styles */
+header {
+  background-color: #003366;
+  color: #ffffff;
+  padding: 20px 0;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h1 {
+  font-size: 1.8rem;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+}
+nav li {
+  margin-left: 20px;
+}
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+/* Hero Section Styles */
+#hero {
+  background: url('https://via.placeholder.com/1200x600?text=SharkFin+Racing+Hero') no-repeat center center/cover;
+  color: #ffffff;
   text-align: center;
+  padding: 100px 20px;
+  position: relative;
+}
+#hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 51, 102, 0.5); /* Dark overlay for contrast */
+}
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+.hero-content h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+.hero-content p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+.btn {
+  background-color: #0099CC;
+  color: #ffffff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 700;
 }
 
-main {
-  padding: 2rem;
+/* Section Styles */
+section {
+  padding: 60px 0;
+}
+section h2 {
   text-align: center;
+  margin-bottom: 20px;
+  color: #003366;
 }
 
+/* Team Section Styles */
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.member {
+  text-align: center;
+  margin-bottom: 20px;
+  flex: 1 1 250px;
+  max-width: 300px;
+}
+.member img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #003366;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px 0;
+}
